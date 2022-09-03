@@ -1,7 +1,7 @@
 ---
+layout: ../layouts/Main.astro
 title: Napat Srichan
 color: "#60a5fa"
-layout: ../layouts/Main.astro
 ---
 
 <img alt="profile" class="w-32 h-32 float-right" src="/profile.png" />
