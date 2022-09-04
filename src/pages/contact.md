@@ -1,7 +1,7 @@
 ---
 title: Contact
 color: "#60a5fa"
-layout: /src/layouts/Main.astro
+layout: ../layouts/main.astro
 ---
 
 You can contact me via [![email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:mail@napat.sc) mail@napatsc.com _(important work only!)_

@@ -1,7 +1,7 @@
 ---
 title: About me
 color: "#4ade80"
-layout: /src/layouts/Main.astro
+layout: ../layouts/main.astro
 ---
 
 ## Education
