@@ -1,5 +1,5 @@
 ---
-const { frontmatter } = Astro.props;
+const home = Astro.props.url === "";
 ---
 
 <html lang="en">
@@ -7,15 +7,13 @@ const { frontmatter } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{frontmatter.title}</title>
+    <title>Napat Srichan</title>
   </head>
   <body class="bg-zinc-900">
     <div
-      class="mx-auto p-4 prose prose-invert prose-headings:pb-4 prose-headings:border-b prose-headings:border-zinc-500 prose-img:m-1 prose-img:inline"
+      class="relative mx-auto p-4 pt-8 prose prose-invert prose-a:text-emerald-400 prose-headings:pb-4 prose-headings:border-b prose-headings:border-zinc-500 prose-img:m-1 prose-img:inline"
     >
-      <h1 style={`color:${frontmatter.color}`}>
-        {frontmatter.title}
-      </h1>
+      {!home && <a class="not-prose absolute mt-10 mr-8 top-0 right-0 text-lg text-zinc-300 underline" href="/">{"< back"}</a>}
       <slot />
     </div>
   </body>
