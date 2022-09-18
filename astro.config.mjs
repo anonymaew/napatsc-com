@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 // injecting default layout
 const defaultLayoutPlugin = () => {
   return (tree, file) => {
-    file.data.astro.frontmatter.layout = "./src/layouts/main.astro";
+    file.data.astro.frontmatter.layout = "/src/layouts/main.astro";
   };
 };
 
