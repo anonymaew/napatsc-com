@@ -1,6 +1,6 @@
 # Napat Srichan
 
-<img alt="profile" class="w-32 h-32 float-right" src="/profile.png" />
+<img alt="profile" class="w-32 h-32 float-right" src="/profile.webp" />
 
 Hello! I am a sophomore majoring in Computer Science.
 
