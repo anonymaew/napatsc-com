@@ -1,5 +1,7 @@
 ---
-const home = Astro.props.url === "";
+const url = Astro.url.pathname;
+const isHome = url === "/";
+const content = Astro.props.compiledContent().replaceAll(".md", "");
 ---
 
 <html lang="en">
@@ -15,7 +17,7 @@ const home = Astro.props.url === "";
       class="relative mx-auto p-4 pt-8 prose prose-invert prose-a:text-emerald-400 prose-headings:pb-4 prose-headings:border-b prose-headings:border-zinc-500 prose-img:m-1 prose-img:inline"
     >
       {
-        !home && (
+        !isHome && (
           <a
             class="not-prose absolute mt-10 mr-8 top-0 right-0 text-lg text-zinc-300 underline"
             href="/"
@@ -24,7 +26,7 @@ const home = Astro.props.url === "";
           </a>
         )
       }
-      <slot />
+      <article set:html={content}></article>
     </div>
   </body>
 </html>

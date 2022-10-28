@@ -10,7 +10,7 @@ I love tinkering stuff and creating small projects solving everyday problems;
 looking forward to contributing to communities!  
 I also enjoy rock climbing and hiking in nature.
 
-- [📦 Projects](./projects)
-- [📚 Blogs](./blogs)
-- [📧 Contact](./contact)
-- [💁‍♂️ About me](./about)
+- [📦 Projects](./projects.md)
+- [📚 Blogs](./blogs.md)
+- [📧 Contact](./contact.md)
+- [💁‍♂️ About me](./about.md)
