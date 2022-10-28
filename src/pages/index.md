@@ -1,6 +1,6 @@
 # Napat Srichan
 
-<img alt="profile" class="w-32 h-32 float-right" src="/profile.webp" />
+<img alt="profile" class="w-32 h-32 float-right" src="./profile.webp" />
 
 Hello! I am a sophomore majoring in Computer Science.
 
@@ -10,7 +10,7 @@ I love tinkering stuff and creating small projects solving everyday problems;
 looking forward to contributing to communities!  
 I also enjoy rock climbing and hiking in nature.
 
-- [📦 Projects](/projects)
-- [📚 Blogs](/blogs)
-- [📧 Contact](/contact)
-- [💁‍♂️ About me](/about)
+- [📦 Projects](./projects)
+- [📚 Blogs](./blogs)
+- [📧 Contact](./contact)
+- [💁‍♂️ About me](./about)
