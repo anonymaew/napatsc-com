@@ -4,7 +4,7 @@ on:
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [master]
+    branches: [cicd]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
@@ -20,6 +20,11 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v2
+      - name: Checkout the markdown files from github profile
+        uses: actions/checkout@v2
+        with:
+          repository: anonymaew/anonymaew
+          path: ./src/pages
       - name: Install, build, and upload your site
         uses: withastro/action@v0
 
