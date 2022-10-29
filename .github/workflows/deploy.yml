@@ -25,6 +25,8 @@ jobs:
         with:
           repository: anonymaew/anonymaew
           path: ./src/pages
+      - name: Rename readme.md to index.md
+        run: mv ./src/pages/README.md ./src/pages/index.md
       - name: Install, build, and upload your site
         uses: withastro/action@v0
 
