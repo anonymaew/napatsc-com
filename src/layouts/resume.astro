@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Napat Srichan's website portfolio" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <button
+      class="w-full bg-emerald-500 text-white text-center py-2 underline print:hidden"
+      onclick="window.print()">Print me!</button
+    >
+    <div
+      class="relative mx-auto p-4 prose prose-sm prose-headings:border-b prose-headings:border-zinc-500 print:text-xs max-w-4xl prose-headings:my-2 prose-ul:mt-0 prose-p:m-0 prose-li:m-0 print:prose-a:no-underline prose-a:hover:cursor-pointer"
+    >
+      <slot />
+    </div>
+  </body>
+</html>
