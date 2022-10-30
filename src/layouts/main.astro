@@ -1,6 +1,7 @@
 ---
 const url = Astro.params.slug;
 const isHome = url === "/" || "/resume";
+const content = Astro.props.compiledContent().replaceAll(".md", "");
 ---
 
 <html lang="en">
@@ -25,7 +26,7 @@ const isHome = url === "/" || "/resume";
           </a>
         )
       }
-      <slot />
+      <article set:html={content}></article>
     </div>
   </body>
 </html>
